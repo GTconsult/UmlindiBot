@@ -1,0 +1,19 @@
+{
+  "name": "umlindibot",
+  "version": "1.0.0",
+  "description": "Umlindi Bot for first level support using Microsoft Bot Framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\Program Files\\Git\\cmd\\UmlindiBot"
+  },
+  "author": "Craig Tarr",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.4.4",
+    "restify": "^4.3.0"
+  }
+}
