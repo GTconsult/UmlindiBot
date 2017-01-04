@@ -21,7 +21,10 @@ server.listen(process.env.PORT || 3000, function()
 {
    console.log('%s listening to %s', server.name, server.url); 
 });
-
+server.get('/', restify.serveStatic({
+ directory: __dirname,
+ default: '/index.html'
+}));
 // Create chat bot
 var connector = new builder.ChatConnector
 ({ appId: process.env.MY_APP_ID, appPassword: process.env.MY_APP_SECRET }); 
