@@ -13,7 +13,7 @@ server.listen(process.env.PORT || 3000, function()
 var connector = new builder.ChatConnector
 ({ appId: 'YourAppId', appPassword: 'YourAppPassword' }); 
 var bot = new builder.UniversalBot(connector);
-server.post('/api/messages', connector.listen());
+server.post('/API/Messages', connector.listen());
 
 // Create bot dialogs
 bot.dialog('/', function (session) {
